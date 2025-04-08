@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<style>
+    .gradient-card {
+        background: linear-gradient(135deg, #e0c2ff, #a8d5ff); /* Example gradient */
+    }
+</style>
+ 
+<body class="gradient-card mt-5">
+    <div class="container mt-5 w-25">
+        <div class="card shadow p-4">
+            <h1 class="text-center mb-4">Micah Calculator</h1>
+
+            <div class="mb-3">
+                <label for="num1" class="form-label">Enter Number 1:</label>
+                <input type="number" class="form-control" id="num1" placeholder="Number 1">
+            </div>
+
+            <div class="mb-3">
+                <label for="operator" class="form-label">Select Operator:</label>
+                <select class="form-select" id="operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="num2" class="form-label">Enter Number 2:</label>
+                <input type="number" class="form-control" id="num2" placeholder="Number 2">
+            </div>
+
+            <button class="btn btn-primary w-100" onclick="calculate()">Calculate</button>
+
+            <div id="result" class="mt-4 p-3 bg-light rounded text-center"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
